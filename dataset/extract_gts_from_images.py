@@ -5,8 +5,8 @@ import numpy as np
 
 def main():
     image_names = os.listdir("honeybee/gt-dots")
-    path = r"D:\hasty_ML_challenge\bees\honeybee\gt-dots"
-    bee_path = r"D:\hasty_ML_challenge\bees\honeybee\img"
+    path = r"./honeybee/gt-dots"
+    bee_path = r"./honeybee/img"
     white = [255, 255, 255]
     locations = {}
 
