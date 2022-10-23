@@ -38,7 +38,7 @@ Yolo isn't good for overlapping objects. Since there are many overlapping bees i
 
 ### Data Augmentation
 
-Its unclear whether the background of bees, lights, distance of bees fron canera will remain the same. Hence I went for all the data augmentations which ultralytics version of yolov5 come with.
+Its unclear whether the background of bees, lights, distance of bees from the camera will remain the same. Hence I went for all the data augmentations which ultralytics version of yolov5 come with.
 
 However, sometimes data augmentations back fire, if implemented the wrong ones. That's why the questions raised above are to be taken seriously.
 
