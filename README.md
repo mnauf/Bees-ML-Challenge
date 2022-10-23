@@ -48,7 +48,7 @@ I started with Yolov7, but it turned out that its training is unstable and has m
 
 Yolo isn't good for overlapping objects. Since there are many overlapping bees in the given dataset, yolo might not be the best object detector model to solve this problem.
 
-## Room for improvemenet
+## Room for improvement
 
 
 ### Tweaking the hyper params
