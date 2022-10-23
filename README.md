@@ -12,7 +12,7 @@ Given the white pixels as the centroid of the bees, it was very easy to extract 
 
 To generate the labels for yolo, place the `honeybee` folder which comes with the challenge, inside `dataset` directory.
 
-![](directory_structure.jpg)
+![](directory_structure.PNG)
 
 `cd dataset`
 
