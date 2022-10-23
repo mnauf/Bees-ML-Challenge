@@ -76,3 +76,8 @@ I would like to spend more time doing research on which object detection model w
 ### OOP
 
 The codebase isn't too big. Otherwise I would have like to go for OOP.
+
+
+# Note
+
+Any trouble with replicating the results? Feel free to contact to me. I might have slipped committing import file or made a bug while refactoring the code
