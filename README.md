@@ -55,7 +55,7 @@ Yolo isn't good for overlapping objects. Since there are many overlapping bees i
 
 There is a room for tweaking hyperparams to get the best accuracy
 
-### Try out different sizes for Yolo
+### Different sizes for Yolo
 
 Yolo provides small, medium, large and many other models to try out. If had more time, I would like to spend more time experimenting with them
 
