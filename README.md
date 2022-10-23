@@ -30,7 +30,7 @@ Retrain and validate results using [this](https://colab.research.google.com/driv
 
 `python sample_solution --source "beeType1_115.jpg"`
 
-It should print the numbers of bees in the picture. By default the confidence threshold is set to 0.7.
+It should print the numbers of bees in the picture. By default, the confidence threshold is set to 0.7.
 
 ## Run tests
 
