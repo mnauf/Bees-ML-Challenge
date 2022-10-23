@@ -40,7 +40,7 @@ That's it. That's the command
 
 ## Training Methodology
 
-The go-to computer vision model for a task where the requirement is to calculate the frequency of items in the image, the first model that comes to any engineer's mind is Yolo.
+The go-to computer vision model for a task where the requirement is to calculate the frequency of any item in the image, the first model that comes to any engineer's mind is Yolo.
 
 I started with Yolov7, but it turned out that its training is unstable and has many issues about on Github regarding the same, which made me go for v5.
 
