@@ -26,9 +26,11 @@ Retrain and validate results using [this](https://colab.research.google.com/driv
 
 ## Count the number of bees
 
+Download the trained model from [here](https://drive.google.com/file/d/1mU60KpKtk18t2IINdJlK4LWNDT6Fpxax/view?usp=sharing) and place it inside `yolov5` folder.
+
 `cd yolov5`
 
-`python sample_solution --source "beeType1_115.jpg"`
+`python sample_solution.py --source "beeType1_115.jpg"`
 
 It should print the numbers of bees in the picture. By default, the confidence threshold is set to 0.7.
 
