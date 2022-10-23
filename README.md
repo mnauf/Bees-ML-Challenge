@@ -8,9 +8,11 @@ Results can be replicated using python3.6.
 
 ## Data Preparation
 
-Given the white pixels as the centroid of the bees, it was very easy to extract their location in the image and assume any breadth and width of the bounding box while making sure the width and height stays inside the image
+Given the white pixels as the centroid of the bees, it was very easy to extract their location in the image and assume any breadth and width of the bounding box while making sure the width and height stays inside the image.
 
-To generate the labels for yolo, just run:
+To generate the labels for yolo, place the `honeybee` folder which comes with the challenge, inside `dataset` directory.
+
+`cd dataset`
 
 `python run`
 
