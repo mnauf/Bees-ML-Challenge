@@ -63,7 +63,7 @@ Yolo provides small, medium, large and many other models to try out. If had more
 
 Its unclear whether the background of bees, lights, distance of bees from the camera will remain the same. Hence I went for all the data augmentations which ultralytics version of yolov5 comes with.
 
-However, sometimes data augmentations back fire, if implemented the wrong ones. That's why the questions raised above are to be taken seriously.
+However, sometimes data augmentations backfire, if implemented the wrong ones. That's why the questions raised above are to be taken seriously.
 
 ### Yolov7
 
@@ -75,9 +75,9 @@ I would like to spend more time doing research on which object detection model w
 
 ### OOP
 
-The codebase isn't too big. Otherwise I would have like to go for OOP.
+The codebase isn't too big. Otherwise, I would have like to go for OOP.
 
 
 # Note
 
-Any trouble with replicating the results? Feel free to contact to me. I might have slipped committing import file or made a bug while refactoring the code
+Any trouble with replicating the results? Feel free to contact to me. I might have slipped committing any important file or might have made a bug while refactoring the code.
