@@ -270,7 +270,6 @@ def main(image):
     opt = parse_opt()
     opt.source = image_path
     total_bees, imo = predict_bees(opt)
-    cv2.imshow("sdfsd", imo)
     imo = cv2.cvtColor(imo, cv2.COLOR_RGB2BGR)
     return imo
 
