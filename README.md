@@ -5,7 +5,7 @@ Results can be replicated using python3.6.
 
 `requirements.txt` is available at the root directory
 
-![](yolov5/runs/detect/exp15/beeType1_115.jpg)
+![](yolov5/runs/detect/exp15/example.jpg)
 
 ## Data Preparation
 
