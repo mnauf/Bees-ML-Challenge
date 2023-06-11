@@ -1,3 +1,5 @@
+import os
+
 import gradio as gr
 from sample_solution import main as detect_bees
 
@@ -27,6 +29,15 @@ with gr.Blocks() as block:
 
     btn = gr.Button(value="Count the number of Bees")
     btn.click(detect_bees, inputs=[file_input], outputs=[file_output], queue=True)
+    examples_dir = os.listdir(os.path.join(os.path.dirname(__file__), "examples"))
+    print(examples_dir)
+    gr.Examples(
+        examples=[os.path.join(os.path.dirname(__file__), "examples", example_img) for example_img in examples_dir],
+        inputs=file_input,
+        outputs=file_output,
+        fn=detect_bees,
+        cache_examples=True,
+    )
 
-block.queue(concurrency_count=5).launch(server_name="localhost", share=True)
+block.queue(concurrency_count=5).launch()
 # block.queue().launch()
