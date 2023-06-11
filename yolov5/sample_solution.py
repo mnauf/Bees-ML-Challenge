@@ -29,6 +29,7 @@ import argparse
 import os
 import platform
 import sys
+import time
 from pathlib import Path
 
 import torch
@@ -215,7 +216,7 @@ def run(
     if update:
         strip_optimizer(weights[0])  # update model (to fix SourceChangeWarning)
 
-    return total_bees
+    return total_bees, im0
 
 def parse_opt():
     parser = argparse.ArgumentParser()
@@ -241,8 +242,8 @@ def parse_opt():
     parser.add_argument('--name', default='exp', help='save results to project/name')
     parser.add_argument('--exist-ok', action='store_true', help='existing project/name ok, do not increment')
     parser.add_argument('--line-thickness', default=3, type=int, help='bounding box thickness (pixels)')
-    parser.add_argument('--hide-labels', default=False, action='store_true', help='hide labels')
-    parser.add_argument('--hide-conf', default=False, action='store_true', help='hide confidences')
+    parser.add_argument('--hide-labels', default=True, action='store_true', help='hide labels')
+    parser.add_argument('--hide-conf', default=True, action='store_true', help='hide confidences')
     parser.add_argument('--half', action='store_true', help='use FP16 half-precision inference')
     parser.add_argument('--dnn', action='store_true', help='use OpenCV DNN for ONNX inference')
     parser.add_argument('--vid-stride', type=int, default=1, help='video frame-rate stride')
@@ -252,10 +253,27 @@ def parse_opt():
     return opt
 
 
-def main(opt):
+def predict_bees(opt):
     check_requirements(exclude=('tensorboard', 'thop'))
-    total_bees = run(**vars(opt))
-    return total_bees
+    total_bees, imo = run(**vars(opt))
+    return total_bees, imo
+
+
+def main(image):
+    # print(image)
+    # print(image.shape)
+    # print()
+    # cv2.imshow("sdfsd", image)
+    image_path = os.path.join("images", str(time.time()) + ".jpg")
+    image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+    cv2.imwrite(image_path, image)
+    opt = parse_opt()
+    opt.source = image_path
+    total_bees, imo = predict_bees(opt)
+    cv2.imshow("sdfsd", imo)
+    imo = cv2.cvtColor(imo, cv2.COLOR_RGB2BGR)
+    return imo
+
 
 if __name__ == "__main__":
     opt = parse_opt()
