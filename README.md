@@ -1,4 +1,5 @@
 # Bees Challenge
+Live demo [here](https://huggingface.co/spaces/mnauf/detect-bees)
 
 Results can be replicated using python3.6. 
 
@@ -18,7 +19,7 @@ To generate the labels for yolo, place the `honeybee` folder which comes with th
 
 `python run`
 
-The output is dumped inside `gts` folder, next to `honeybee` folder
+GTs generated in the yolo format inside `gts` folder, next to `honeybee` folder
 
 ## Training and Validation
 
